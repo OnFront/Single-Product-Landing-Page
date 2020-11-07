@@ -73,6 +73,10 @@ button:hover{
     opacity: 0.8;
     transition: all 0.5s;
 }
+
+button:focus{
+    outline: none;
+}
 .ctn-button_navbar button{
     margin-left: 20px;
 }
@@ -146,8 +150,8 @@ button:hover{
 
     .img_hero{
         position: relative;
-        width: 80%;
-        max-width: 500px;
+        width: 100%;
+        max-width: 600px;
         height: auto;
         animation: horizontal 2.5s ease-in-out infinite;
         z-index: -1;
@@ -292,6 +296,44 @@ button:hover{
     .arrow{
         display:none;
     }
+
+    .section-content{
+        padding: 60px 0;
+        border-bottom: 1px solid #eaeaea;
+        align-items: center;
+        margin: 0;
+    }
+
+    .section-content-container{
+        padding: 0 15px;
+        display: flex;
+        flex-flow: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .section-para h2{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .section-para p{
+        margin-bottom: 20px;
+    }
+
+    .section-content-img{
+        padding: 15px;
+        display: flex;
+       
+    }
+
+    .section-content-img img{
+        position: relative;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+
 
 @media screen and (min-width:576px){
     
@@ -499,7 +541,30 @@ button:hover{
     .instruction-box{
         margin-bottom: 0;
     }
+
+    .section-content-container{
+        flex-flow: row;
+        max-width: 720px;
+    }
+
+    .content-col1{
+        max-width: 50%;
+    }
+
+    .content-col2{
+        max-width: 50%;
+    }
+
+    .section-content{
+        padding: 100px 0;
+    }
+
+    .section-content-img img{
+        max-width: 100%;
+    }
 }
+
+
 
 
 @media screen and (min-width: 992px){
@@ -659,6 +724,27 @@ button:hover{
         align-content: center;
         margin: auto auto;
     }
+
+    .section-content-container{
+        max-width: 1140px;
+    }
+
+    .section-para p{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .section-content-img{
+      
+       padding: 0 100px;
+    }
+
+    .section-content-img img{
+        position: relative;
+        height: auto;
+        max-width: 80%;
+    }
+
         
 }
 
@@ -674,6 +760,10 @@ button:hover{
 
     .features-container{
       
+        max-width: 1140px;
+    }
+    
+    .section-content-container{
         max-width: 1140px;
     }
 
