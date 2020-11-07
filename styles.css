@@ -247,6 +247,51 @@ button:hover{
     .xiaomi-robot-profile{
        display: none;
     }
+    
+    .instruction{
+        padding: 60px 15px;
+        background: var(--blue);
+        text-align: center;
+        background-image: url(grafiki/cleaning_floor.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .instruction-container{
+        display: flex;
+        flex-flow: column;
+        margin: 0 auto;
+    
+    }
+
+    .instruction-box{
+        max-width: 225px;
+        margin: 0 auto 20px auto;
+    }
+
+    .instruction-box img{
+        position: relative;
+        height: 50px;
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    .instruction-box p{
+        color: #ddd;
+    }
+
+    .instruction-box h3{
+        font-size: 20px;
+        line-height: 1.7;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        color: #FFF;
+        margin-bottom: 5px;
+    }
+    
+    .arrow{
+        display:none;
+    }
 
 @media screen and (min-width:576px){
     
@@ -346,6 +391,8 @@ button:hover{
     .features-desc-container{
         max-width: 720px;
     }
+
+    
 }
 
 
@@ -440,6 +487,18 @@ button:hover{
         max-width: 960px;
     }
 
+    .instruction-container{
+        flex-flow: row;
+        justify-items: space-evenly;
+    }
+
+    #instruction-box2{
+        margin: 0 10px;
+    }
+
+    .instruction-box{
+        margin-bottom: 0;
+    }
 }
 
 
@@ -583,6 +642,22 @@ button:hover{
         top: -13.5px;
         right: 42%;
         z-index: 0;
+    }
+
+    .instruction{
+        padding: 120px 15px;
+    }
+
+    .instruction-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        max-width: 1200px;
+    }
+
+    .arrow{
+        display: flex;
+        align-content: center;
+        margin: auto auto;
     }
         
 }
