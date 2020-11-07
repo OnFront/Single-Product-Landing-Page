@@ -153,21 +153,26 @@ button:hover{
         z-index: -1;
     }
 
+    @keyframes horizontal{
+        0% {top: 0px;}
+        50%{top: -20px;}
+        100%{top: 0px;}
+    }
+
     /* FEATURES SECTION */
 
     .features{
-        padding: 60px 0;
+        padding: 60px 15px;
         background-color: var(--dkgrey);
+        border-bottom: 1px solid #eaeaea;
     }
 
     .features-container{
         display: flex;
         flex-flow: row;
-        padding: 10px 1rem;
         text-align: center;
         flex-wrap: wrap;
-        flex-basis: 50%;
-        
+        justify-content: space-around;
     }
 
     .box{
@@ -185,17 +190,62 @@ button:hover{
         width: 50px;
         margin-bottom: 15px;
     }
-    h3{
+   
+    .box h3{
         font-size: 16px;
         margin-bottom: 5px;
         line-height: 1.7;
+        font-weight: 600;
     }
 
 
-    @keyframes horizontal{
-        0% {top: 0px;}
-        50%{top: -20px;}
-        100%{top: 0px;}
+    .features-desc{
+        padding: 100px 0;
+    }
+
+    .features-desc-container{
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .section-title{
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+
+    .section-title h2{
+        font-size: 40px;
+        letter-spacing: -0.02em;
+        margin-bottom: 10px;
+    }
+
+    .grid-col1{
+        text-align: right;
+    }
+    
+    .grid-col2{
+        display: none;
+    }
+
+    .desc{
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    .feature-box{
+        margin-bottom: 20px;
+    }
+
+    .feature-box h3{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .xiaomi-robot-profile{
+       display: none;
     }
 
 @media screen and (min-width:576px){
@@ -210,14 +260,12 @@ button:hover{
         grid-gap: 30px;
         grid-template-columns: 1fr 1fr;
         margin: 0 auto;
-        /* max-width: 920px; */
+        
     }
 
     .box{
         margin: 0;
     }
-
-    
 
  }
 
@@ -295,6 +343,9 @@ button:hover{
         font-size: 30px;
     }
 
+    .features-desc-container{
+        max-width: 720px;
+    }
 }
 
 
@@ -374,7 +425,7 @@ button:hover{
     }
 
     .features{
-        padding: 100px 0;
+        padding: 100px 15px;
     }
 
    .features-container{
@@ -383,6 +434,10 @@ button:hover{
 
     .box{
         margin: 0;
+    }
+
+    .features-desc-container{
+        max-width: 960px;
     }
 
 }
@@ -423,6 +478,113 @@ button:hover{
         
     }
 
+    .features-desc-container{
+        max-width: 960px;
+    }
+
+    .desc{
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    .grid-col2{
+        display: flex;
+        align-items: center;
+        z-index: -1;
+        width: 350px;
+    }
+
+
+
+    .xiaomi-robot-profile{
+        position: relative;
+        
+        top: -10px;
+        display: block;
+        height: 350px;
+        width: auto;
+        animation: vertical 2s linear infinite;
+        margin: 0;
+    }
+
+    @keyframes vertical{
+        0% {transform: translateX(0);}
+        25%{transform: translateX(-10px);}
+        50%{transform: translateX(0);}
+        75%{transform: translateX(10px);}
+        100%{transform: translateX(0);}
+    }
+
+    #feature2{
+        margin-right: 60px;
+    }
+
+    #feature5{
+        margin-left: 60px;
+    }
+
+    #feature h3::before{
+        top: 22px important!;
+    }
+
+    #feature5 h3::after{
+        right: 50% !important;
+    }
+
+    .grid-col1 .feature-box h3::before{
+        background-color: var(--blue);
+        display: block;
+        content: "";
+        position: relative;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        top: 20px;
+        left: 105%;
+        z-index: 1;
+    }
+
+    .grid-col3 .feature-box h3::before{
+        background-color: var(--blue);
+        display: block;
+        content: "";
+        position: relative;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        top: 20px;
+        right: 10%;
+        z-index: 1;
+    }
+
+
+    .grid-col1 .feature-box h3::after{
+        background-color: #999;
+        display: block;
+        content: "";
+        position: relative;
+        width: 100px;
+        height: 2px;
+        
+        top: -13.5px;
+        left: 108%;
+        z-index: 0;
+    }
+    .grid-col3 .feature-box h3::after{
+        background-color: #999;
+        display: block;
+        content: "";
+        position: relative;
+        width: 100px;
+        height: 2px;
+        
+        top: -13.5px;
+        right: 42%;
+        z-index: 0;
+    }
+        
 }
 
 @media screen and (min-width: 1200px){
@@ -439,4 +601,6 @@ button:hover{
       
         max-width: 1140px;
     }
+
+
 }
