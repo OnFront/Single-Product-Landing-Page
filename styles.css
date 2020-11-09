@@ -6,11 +6,10 @@
 }
 
 :root{
-    --blue: #1da1f2;
-    --black: black;
-    --grey: #777;
-    --dkgrey: #fafafa;
-    font-family: "roboto";
+    --Myblue: #1da1f2;
+    --Mygrey: #777;
+    --Dkgrey: #fafafa;
+    font-family: 'Roboto';
 }
 
 body{
@@ -19,6 +18,7 @@ body{
 }
 
 a{
+    font-family: 'Roboto';
     text-decoration: none;
     color: black;
 }
@@ -26,7 +26,8 @@ a{
 /* MOBILE VIEW */
 
 p{
-    color: var(--grey);
+    font-family: 'Roboto';
+    color: var(--Mygrey);
     font-weight: 400;
     line-height: 22px;
 }
@@ -63,7 +64,7 @@ button{
     color: white;
     letter-spacing: 2px;
     border: none;
-    background-color: var(--blue);
+    background-color: var(--Myblue);
     border-radius: 3px;
     cursor: pointer;
     padding: 12.5px 30px;
@@ -95,11 +96,11 @@ button:focus{
     
     .show-desktop li a{
         transition: all 0.3s ease 0s;
-        color: var(--grey);
+        color: var(--Mygrey);
     }
     
     .show-desktop li a:hover{
-        color: var(--blue);
+        color: var(--Myblue);
     }
     
 
@@ -167,7 +168,7 @@ button:focus{
 
     .features{
         padding: 60px 15px;
-        background-color: var(--dkgrey);
+        background-color: var(--Dkgrey);
         border-bottom: 1px solid #eaeaea;
     }
 
@@ -186,6 +187,12 @@ button:focus{
         border: 1px dashed #ddd;
         margin: 15px 0;
         padding: 30px;
+        -webkit-transition: all .2s linear;
+    }
+
+    .box:hover{
+        transform: scale(1.1);
+        -webkit-transition: all .2s linear;
     }
 
     .box1-img{
@@ -254,7 +261,7 @@ button:focus{
     
     .instruction{
         padding: 60px 15px;
-        background: var(--blue);
+        background: var(--Myblue);
         text-align: center;
         background-image: url(grafiki/cleaning_floor.png);
         background-size: cover;
@@ -324,7 +331,6 @@ button:focus{
     .section-content-img{
         padding: 15px;
         display: flex;
-       
     }
 
     .section-content-img img{
@@ -333,7 +339,230 @@ button:focus{
         margin: 0 auto;
     }
 
+    .product-choice{
+        padding: 60px 0;
+        background-color: #FAFAFA;
+        border-bottom: 1px solid #eaeaea;
+    }
 
+    .product-choice-container{
+        padding: 0 15px;
+    }
+
+    .product-content{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .product-content h2{
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .product-content p{
+        margin-bottom: 20px;
+    }
+
+    .product-card{
+        border: 1px solid #ddd;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        max-width: 250px;
+        margin: 0 auto;
+    
+    }
+
+    #card1{
+        margin-bottom: 20px;
+    }
+
+    .carousel{
+        border-bottom: 1px solid #eaeaea;
+    }
+
+
+    .btnAddCart{
+        display: block;
+        position: absolute;
+        left: 28%;
+        bottom: 15%;
+        /* left: 30%;
+        bottom: -50%; */
+        z-index: 1;
+        /* z-index: -10; */
+        /* animation: showbutton .3s linear forwards; */
+    }
+
+    .btnAddCart button:hover{
+       background: #FFCE31;
+       color: var(--Myblue);
+       transition: all .3 ease-out;
+    }
+
+    /* @keyframes showbutton{
+        0%{
+            transofrm: translateY(0);
+            opacity: 0;
+        }
+        25%{
+            opacity: 20%;
+        }
+        100%{
+            transform: translateY(-150px);
+            opacity: 100%;
+            z-index: 1;
+        }
+    } */
+
+
+    
+    .product-text{
+        text-align: center;
+        padding: 5%;
+        z-index: 2;
+    }
+
+    .product-name{
+        font-size: 20px;
+        color: #007bff;
+    }
+
+    .Availability span{
+        color: #34bf49;
+        font-weight: 700;
+    }
+
+.price{
+    text-align: left;
+}
+
+    .price::after{
+        content: "";
+        position: relative;
+        display: block;
+        top: -19px;
+        left: 90px;
+        background-image: url(grafiki/star.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 15px;
+        width: auto;
+    }
+    
+    .price-value{
+        color: red;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+    }
+    
+    .testimonials{
+        padding: 60px 15px;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+    .testimonials-title{
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 60px;
+    }
+
+    .testimonials-title h2{
+        margin-bottom: 10px;
+    }
+
+    .testimonials-title p{
+        margin-bottom: 20px;
+    }
+    
+    .figure{
+        border: 1px solid #ddd;
+        padding: 20px 10px 10px 10px;
+        margin-bottom: 20px;
+    }
+
+    .figure img {
+        margin-bottom: 10px;
+    }
+
+    .figure > p{
+        margin-bottom: 20px;
+    }
+
+    .quotation{
+        display: block;
+        position: relative;
+        height: 25px;
+        width: auto;
+    }
+
+
+    .name{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .faq{
+        padding: 60px 0;
+        display: flex;
+    }
+
+    .faq-container{
+        padding: 0 30px;
+        margin: 0 auto;
+        max-width: 960px;
+    }
+
+
+    .faq-title{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .faq-grid{
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    
+    .faq h2{
+        margin-bottom: 20px;
+    }
+    
+    .faq h3{
+        margin-bottom: 20px;
+    }
+
+    .cta-section{
+        background-color: var(--Myblue);
+        padding: 60px 15px;
+    }
+
+    .cta-section-container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 960px;
+        margin: 0 auto;
+        justify-items: flex-end;
+    }
+
+    .cta-section h2{
+        color: #fff;
+        font-size: 28px;
+        margin-right: auto;
+    }
+
+
+    .btn-last{
+        background-color: #FFFF;;
+        color: #555;
+        font-weight: 900;
+    }
 
 @media screen and (min-width:576px){
     
@@ -353,6 +582,43 @@ button:focus{
     .box{
         margin: 0;
     }
+
+    #card1{
+        margin-bottom: 0;
+        margin-left: auto;
+    }
+
+    #card2{
+        
+        margin-right: auto;
+    }
+
+    .product-choice-container{
+        margin: 0 auto;
+    }
+
+    .product-cards{
+        display: flex;
+
+    }
+
+    .testimonials-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        grid-gap: 20px;
+    }
+
+    .figure{
+        max-width: 300px;
+    }
+
+    
+
+
+    
+
+
 
  }
 
@@ -433,6 +699,11 @@ button:focus{
     .features-desc-container{
         max-width: 720px;
     }
+
+  .cta-section-container h2{
+      margin-bottom: 20px;
+  }
+    
 
     
 }
@@ -549,6 +820,7 @@ button:focus{
 
     .content-col1{
         max-width: 50%;
+        margin-left: 3%;
     }
 
     .content-col2{
@@ -561,6 +833,23 @@ button:focus{
 
     .section-content-img img{
         max-width: 100%;
+    }
+
+     .product-choice-container{
+        max-width: 720px;
+    }
+
+    .product-card{
+        max-width: 300px;
+    }
+
+    .faq-grid{
+        grid-template-columns: 1fr 1fr;
+       
+    }
+
+    .faq{
+        padding: 100px 0;
     }
 }
 
@@ -658,7 +947,7 @@ button:focus{
     }
 
     .grid-col1 .feature-box h3::before{
-        background-color: var(--blue);
+        background-color: var(--Myblue);
         display: block;
         content: "";
         position: relative;
@@ -671,7 +960,7 @@ button:focus{
     }
 
     .grid-col3 .feature-box h3::before{
-        background-color: var(--blue);
+        background-color: var(--Myblue);
         display: block;
         content: "";
         position: relative;
@@ -727,6 +1016,7 @@ button:focus{
 
     .section-content-container{
         max-width: 1140px;
+      
     }
 
     .section-para p{
@@ -736,13 +1026,17 @@ button:focus{
 
     .section-content-img{
       
-       padding: 0 100px;
+       padding: 0 50px;
     }
 
     .section-content-img img{
         position: relative;
         height: auto;
         max-width: 80%;
+    }
+
+    .testimonials-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
         
