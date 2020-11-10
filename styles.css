@@ -23,7 +23,7 @@ body{
 }
 
 a{
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     text-decoration: none;
     color: black;
 }
@@ -31,7 +31,7 @@ a{
 /* MOBILE VIEW */
 
 p{
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     color: var(--Mygrey);
     font-weight: 400;
     line-height: 22px;
@@ -75,7 +75,7 @@ header{
 
 
 button{
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-size: 11px;
     font-weight: 900;
     color: white;
