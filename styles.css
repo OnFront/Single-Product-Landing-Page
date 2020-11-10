@@ -12,6 +12,12 @@
     font-family: 'Roboto';
 }
 
+html{
+    padding-top: 80px;
+    scroll-padding-top: 100px;
+    margin-top: auto;
+}
+
 body{
     background-color: #FFF;
     
@@ -33,8 +39,11 @@ p{
 }
 
 header{
-    
-    position: sticky;
+    position: fixed;
+    background-color: #FFF;
+    top: 0;
+    left: 0;
+    width: 100%;
     align-items: center;
     padding: 30px 10%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -48,7 +57,16 @@ header{
     align-items: center;
 }
 
+.logo-container{
+    display: flex;
+    flex-flow: column;
+    margin-right: auto;
+    text-align: center;
+}
+
 .logo{
+    position: relative;
+    left: -5px;
     cursor: pointer;
     margin-right: auto;
     height: 50px;
@@ -82,6 +100,10 @@ button:focus{
     margin-left: 20px;
 }
 
+    body{
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
 
     .show-desktop{
         list-style: none;
@@ -124,6 +146,7 @@ button:focus{
         text-align: center;
         border-bottom: 1px solid #eaeaea;
         height: 80vh;
+        scroll-behavior: smooth;
         
     }
 
@@ -167,6 +190,7 @@ button:focus{
     /* FEATURES SECTION */
 
     .features{
+        
         padding: 60px 15px;
         background-color: var(--Dkgrey);
         border-bottom: 1px solid #eaeaea;
@@ -211,8 +235,11 @@ button:focus{
 
 
     .features-desc{
+        scroll-behavior: smooth;
+        transition: all 2s ease-out;
         padding: 100px 0;
     }
+
 
     .features-desc-container{
         padding: 0 15px;
@@ -498,10 +525,12 @@ button:focus{
         position: relative;
         height: 25px;
         width: auto;
+        opacity: 0.8;
     }
 
 
     .name{
+        color: black;
         font-size: 16px;
         font-weight: 600;
     }
@@ -564,8 +593,82 @@ button:focus{
         font-weight: 900;
     }
 
+    footer{
+        padding: 60px 0;
+        display: flex;
+        flex-flow: column;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-flow: column;
+        max-width: 339px;
+        justify-content: center;
+        padding: 0 15px;
+        margin: 0 auto;
+        
+        text-align: center;
+    }
+
+    .footer-container p{
+        margin-bottom: 20px;
+    }
+
+    .social{
+        margin-top: 20px;
+    }
+
+    .social_icon{
+        cursor: pointer;
+        align-items: center;
+        vertical-align: center;
+        background-color: #f2f2f2;
+        padding: 10px;
+        position: relative;
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .logo_footer{
+        cursor: pointer;
+        margin: 0 auto;
+        position: relative;
+        left: -5px;
+        height: 50px;
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    i{  
+        
+        color: var(--Myblue);
+    }
+
+    .brand-name{
+        color: black;
+        font-weight: 900;
+    }
+
+    .footer-bottom{
+       margin: 20px auto;
+       padding: 0 15px;
+       text-align: center;
+    }
+
+
 @media screen and (min-width:576px){
     
+    .logo-container{
+        flex-flow: row;
+    }
+
+    .logo-container p{
+        margin: auto 0;
+    }
+
+
      .container{
          max-width: 540px;
          padding: 0 15px;
