@@ -18,8 +18,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-a{
-    
+a{  
     text-decoration: none;
     color: black;
 }
@@ -27,7 +26,6 @@ a{
 /* MOBILE VIEW */
 
 p{
-    
     color: var(--Mygrey);
     font-weight: 400;
     line-height: 22px;
