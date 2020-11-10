@@ -12,11 +12,6 @@
     font-family: "Roboto", sans-serif;
 }
 
-html{
-    padding-top: 80px;
-    scroll-padding-top: 100px;
-    margin-top: auto;
-}
 
 body{
     background-color: #FFF;
@@ -24,7 +19,7 @@ body{
 }
 
 a{
-    /* font-family: 'Roboto'; */
+    
     text-decoration: none;
     color: black;
 }
@@ -32,18 +27,15 @@ a{
 /* MOBILE VIEW */
 
 p{
-    /* font-family: 'Roboto'; */
+    
     color: var(--Mygrey);
     font-weight: 400;
     line-height: 22px;
 }
 
 header{
-    position: fixed;
+    position: sticky;
     background-color: #FFF;
-    top: 0;
-    left: 0;
-    width: 100%;
     align-items: center;
     padding: 30px 10%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
