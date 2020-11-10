@@ -878,7 +878,7 @@ button:focus{
         
     }
 
-    img_hero{
+    .img_hero{
         transform: scale(1);
         max-width: 600px;
     }
