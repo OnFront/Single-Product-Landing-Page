@@ -9,7 +9,7 @@
     --Myblue: #1da1f2;
     --Mygrey: #777;
     --Dkgrey: #fafafa;
-    font-family: 'Roboto';
+    font-family: 'Roboto' !important;
 }
 
 html{
