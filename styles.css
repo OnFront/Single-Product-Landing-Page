@@ -165,7 +165,7 @@ button:focus{
     .img_hero{
         position: relative;
         width: 100%;
-        transform: scale(0.1);
+        transform: scale(0.8);
         max-width: 300px;
         height: auto;
         animation: horizontal 2.5s ease-in-out infinite;
@@ -879,6 +879,7 @@ button:focus{
     }
 
     img_hero{
+        transform: scale(1);
         max-width: 600px;
     }
 
