@@ -12,6 +12,9 @@
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
 
 body{
     background-color: #FFF;
@@ -91,7 +94,6 @@ button:focus{
 }
 
     body{
-        overflow-y: scroll;
         scroll-behavior: smooth;
     }
 
@@ -136,7 +138,6 @@ button:focus{
         text-align: center;
         border-bottom: 1px solid #eaeaea;
         height: 80vh;
-        scroll-behavior: smooth;
         
     }
 
@@ -226,8 +227,6 @@ button:focus{
 
 
     .features-desc{
-        scroll-behavior: smooth;
-        transition: all 2s ease-out;
         padding: 100px 0;
     }
 
